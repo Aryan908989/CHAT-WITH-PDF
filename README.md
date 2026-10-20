@@ -24,18 +24,34 @@ The application uses **Qdrant** for vector storage and retrieval and **Groq** to
 ## 📁 Project Structure
 
 ```text
-.
-├── rag/
-├── src/
-│   └── pdf_chat/
-├── tests/
-├── .env.example
+pdf-chat/
+│
 ├── .gitignore
 ├── .python-version
-├── README.md
-├── app.py
 ├── pyproject.toml
-└── uv.lock
+├── uv.lock
+├── README.md
+│
+├── app.py
+│
+├── rag/
+│   ├── __init__.py
+│   ├── config.py
+│   ├── loader.py
+│   ├── chunker.py
+│   ├── embedder.py
+│   ├── store.py
+│   └── generate.py
+│
+├── data/
+│   └── uploads/
+│       └── .gitkeep
+│
+├── qdrant_data/
+│   └── .gitkeep
+│
+└── tests/
+    └── test_chunker.py
 ```
 
 ## ⚙️ Getting Started
